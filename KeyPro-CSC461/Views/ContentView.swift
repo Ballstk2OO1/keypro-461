@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @StateObject var cartManager = CartManager()
     var columns = [GridItem(.adaptive(minimum: 160), spacing: 20)]
-    @State var productList = [Product]()
+    @State var productList = [Product]()    
     
     func getAllProduct() {        
         TransactionViewModel().getAll() { result in

@@ -39,9 +39,9 @@ struct createTransactionDataModel: Codable {
 }
 
 struct itemModel: Codable {
-    let name: String?
-    let image: String?
-    let price_per_piece: Double?
+    var name: String?
+    var image: String?
+    var price_per_piece: Double?
 }
 
 struct requestCreateTransactionModel: Encodable {

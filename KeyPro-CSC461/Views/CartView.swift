@@ -10,14 +10,6 @@ import SwiftUI
 struct CartView: View {
     @EnvironmentObject var cartManager: CartManager
     
-//    func checkout() {
-//        var model = requestCreateTransactionModel()
-//        model.item = cartManager.products
-//        model.total = cartManager.total
-//
-//        TransactionViewModel().create(reqObj: model, then: <#T##(Result<createTransactionDataModel, ServiceError>) -> Void#>)
-//    }
-    
     var body: some View {
 //        NavigationView {
             ScrollView {
@@ -35,6 +27,7 @@ struct CartView: View {
                     
                     NavigationLink {
                         Checkout()
+                            .environmentObject(cartManager)
                     } label: {
                         PaymentButton(action: {})
                             .padding()
