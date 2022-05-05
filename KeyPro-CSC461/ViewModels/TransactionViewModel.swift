@@ -11,7 +11,7 @@ struct TransactionViewModel {
     
     public func getAll(completion: @escaping (Result<switchDataModel, ServiceError>) -> Void) {
         
-        let headers: HTTPHeaders = ["Authorization" : AppUtils.getUsrAuthToken()!,
+        let headers: HTTPHeaders = ["Authorization" : AppUtils.getUsrAuthToken() ?? "",
                                     "Content-Type": "application/json"]
         
         let request = AF.request(Constants.BASE_URL + Constants.TRANSACTION_DATA, method: .get, headers: headers)

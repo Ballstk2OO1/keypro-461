@@ -65,14 +65,18 @@ struct ContentView: View {
         NavigationView {
             ScrollView {
                 LazyVGrid(columns: columns, spacing: 20) {
-                    ForEach(productList, id: \.id) { product in
-                        NavigationLink {
-                            ProductDetailView(product: product)
-                                .environmentObject(cartManager)
-                        } label: {
-                            ProductCard(product: product)
-                                .environmentObject(cartManager)
+                    if productList.count > 0 {
+                        ForEach(productList, id: \.id) { product in
+                            NavigationLink {
+                                ProductDetailView(product: product)
+                                    .environmentObject(cartManager)
+                            } label: {
+                                ProductCard(product: product)
+                                    .environmentObject(cartManager)
+                            }
                         }
+                    } else {
+                        Text("ไม่พบสินค้า กรุณาลองใหม่อีกครั้ง")
                     }
                 }
                 .padding()

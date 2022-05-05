@@ -9,9 +9,22 @@ import SwiftUI
 
 @main
 struct KeyPro_CSC461App: App {
+    var rootView: String = "login"
+    init() {
+        if AppUtils.getUsrAuthToken() == nil {
+            rootView = "login"
+        } else {
+            rootView = "main"
+        }
+    }
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if rootView == "login" {
+                // Login
+                ContentView()
+            } else {
+                ContentView()
+            }
         }
     }
 }
