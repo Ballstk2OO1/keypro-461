@@ -1,0 +1,908 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BA4E8FFB6931EB64F088459 /* Pods_KeyPro_CSC461.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07863C4566BDBD92D04D702B /* Pods_KeyPro_CSC461.framework */; };
+		1EC4DA7CDBD894913E935242 /* Pods_KeyPro_CSC461Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44933656E84B9BC8E41422E9 /* Pods_KeyPro_CSC461Tests.framework */; };
+		61FC3DB6525723D18CF115F7 /* Pods_KeyPro_CSC461_KeyPro_CSC461UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7348BB0954E188AC485CBFE6 /* Pods_KeyPro_CSC461_KeyPro_CSC461UITests.framework */; };
+		A80702D828230E8200137AD0 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80702D228230E8200137AD0 /* NavigationBar.swift */; };
+		A80702D928230E8200137AD0 /* AddToCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80702D328230E8200137AD0 /* AddToCart.swift */; };
+		A80702DA28230E8200137AD0 /* CustomShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80702D428230E8200137AD0 /* CustomShape.swift */; };
+		A80702DB28230E8200137AD0 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80702D528230E8200137AD0 /* Header.swift */; };
+		A80702DC28230E8200137AD0 /* TopDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80702D628230E8200137AD0 /* TopDetailView.swift */; };
+		A80702DD28230E8200137AD0 /* QuantityFavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80702D728230E8200137AD0 /* QuantityFavView.swift */; };
+		A80702DF28230EA100137AD0 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80702DE28230EA100137AD0 /* ProductDetailView.swift */; };
+		A80702E328233D8B00137AD0 /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80702E228233D8B00137AD0 /* AppUtils.swift */; };
+		A80702E628233EF700137AD0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80702E528233EF700137AD0 /* Constants.swift */; };
+		A80702E828233F3C00137AD0 /* KeyProError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80702E728233F3C00137AD0 /* KeyProError.swift */; };
+		A80702EA2823402700137AD0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80702E92823402700137AD0 /* User.swift */; };
+		A80702EC282342B300137AD0 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80702EB282342B300137AD0 /* AuthViewModel.swift */; };
+		A80702F028237E0F00137AD0 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80702EF28237E0F00137AD0 /* Transaction.swift */; };
+		A80702F228237E4C00137AD0 /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80702F128237E4C00137AD0 /* TransactionViewModel.swift */; };
+		A80702F42823C4B900137AD0 /* AppViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80702F32823C4B800137AD0 /* AppViews.swift */; };
+		A80702F828240EB100137AD0 /* Addressform.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80702F528240EB100137AD0 /* Addressform.swift */; };
+		A80702F928240EB100137AD0 /* PaymentMedthod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80702F628240EB100137AD0 /* PaymentMedthod.swift */; };
+		A80702FA28240EB100137AD0 /* Checkoutbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80702F728240EB100137AD0 /* Checkoutbutton.swift */; };
+		A807030028240EBC00137AD0 /* RegisterPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80702FB28240EBC00137AD0 /* RegisterPage.swift */; };
+		A807030128240EBC00137AD0 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80702FC28240EBC00137AD0 /* Login.swift */; };
+		A807030228240EBC00137AD0 /* Checkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80702FD28240EBC00137AD0 /* Checkout.swift */; };
+		A807030328240EBC00137AD0 /* MyOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80702FE28240EBC00137AD0 /* MyOrder.swift */; };
+		A807030428240EBC00137AD0 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80702FF28240EBC00137AD0 /* Home.swift */; };
+		A88CEA3D2822AA46002145FA /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88CEA3C2822AA46002145FA /* Product.swift */; };
+		A88CEA402822AAD3002145FA /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88CEA3F2822AAD3002145FA /* ProductCard.swift */; };
+		A88CEA422822AAE2002145FA /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88CEA412822AAE2002145FA /* ProductRow.swift */; };
+		A88CEA442822AAF1002145FA /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88CEA432822AAF1002145FA /* CartButton.swift */; };
+		A88CEA472822AB5B002145FA /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88CEA462822AB5B002145FA /* CartView.swift */; };
+		A88CEA492822AB9B002145FA /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88CEA482822AB9B002145FA /* CartManager.swift */; };
+		A88CEA4B2822B62A002145FA /* PaymentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88CEA4A2822B62A002145FA /* PaymentButton.swift */; };
+		A89FD9E7282274A7001273AB /* KeyPro_CSC461App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89FD9E6282274A7001273AB /* KeyPro_CSC461App.swift */; };
+		A89FD9E9282274A7001273AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89FD9E8282274A7001273AB /* ContentView.swift */; };
+		A89FD9EB282274AB001273AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A89FD9EA282274AB001273AB /* Assets.xcassets */; };
+		A89FD9EE282274AB001273AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A89FD9ED282274AB001273AB /* Preview Assets.xcassets */; };
+		A89FD9F8282274AC001273AB /* KeyPro_CSC461Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89FD9F7282274AC001273AB /* KeyPro_CSC461Tests.swift */; };
+		A89FDA02282274AC001273AB /* KeyPro_CSC461UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89FDA01282274AC001273AB /* KeyPro_CSC461UITests.swift */; };
+		A89FDA04282274AC001273AB /* KeyPro_CSC461UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89FDA03282274AC001273AB /* KeyPro_CSC461UITestsLaunchTests.swift */; };
+		A8A75B012824762C00AB2FC1 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A75B002824762C00AB2FC1 /* TabBar.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A89FD9F4282274AC001273AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A89FD9DB282274A7001273AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A89FD9E2282274A7001273AB;
+			remoteInfo = "KeyPro-CSC461";
+		};
+		A89FD9FE282274AC001273AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A89FD9DB282274A7001273AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A89FD9E2282274A7001273AB;
+			remoteInfo = "KeyPro-CSC461";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07863C4566BDBD92D04D702B /* Pods_KeyPro_CSC461.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeyPro_CSC461.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16D94AC9CD9B6B02D88EC3E6 /* Pods-KeyPro-CSC461Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeyPro-CSC461Tests.debug.xcconfig"; path = "Target Support Files/Pods-KeyPro-CSC461Tests/Pods-KeyPro-CSC461Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		1BCA43D0FCC51C72381255C5 /* Pods-KeyPro-CSC461-KeyPro-CSC461UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeyPro-CSC461-KeyPro-CSC461UITests.release.xcconfig"; path = "Target Support Files/Pods-KeyPro-CSC461-KeyPro-CSC461UITests/Pods-KeyPro-CSC461-KeyPro-CSC461UITests.release.xcconfig"; sourceTree = "<group>"; };
+		2095A534448185C29EE99C75 /* Pods-KeyPro-CSC461.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeyPro-CSC461.debug.xcconfig"; path = "Target Support Files/Pods-KeyPro-CSC461/Pods-KeyPro-CSC461.debug.xcconfig"; sourceTree = "<group>"; };
+		44933656E84B9BC8E41422E9 /* Pods_KeyPro_CSC461Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeyPro_CSC461Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E1ABCB778C52EADEF0514AE /* Pods-KeyPro-CSC461.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeyPro-CSC461.release.xcconfig"; path = "Target Support Files/Pods-KeyPro-CSC461/Pods-KeyPro-CSC461.release.xcconfig"; sourceTree = "<group>"; };
+		7348BB0954E188AC485CBFE6 /* Pods_KeyPro_CSC461_KeyPro_CSC461UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeyPro_CSC461_KeyPro_CSC461UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79CA4803CA44793FC38A63BC /* Pods-KeyPro-CSC461Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeyPro-CSC461Tests.release.xcconfig"; path = "Target Support Files/Pods-KeyPro-CSC461Tests/Pods-KeyPro-CSC461Tests.release.xcconfig"; sourceTree = "<group>"; };
+		93E94189C1814B3573191DFA /* Pods-KeyPro-CSC461-KeyPro-CSC461UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeyPro-CSC461-KeyPro-CSC461UITests.debug.xcconfig"; path = "Target Support Files/Pods-KeyPro-CSC461-KeyPro-CSC461UITests/Pods-KeyPro-CSC461-KeyPro-CSC461UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A80702D228230E8200137AD0 /* NavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		A80702D328230E8200137AD0 /* AddToCart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddToCart.swift; sourceTree = "<group>"; };
+		A80702D428230E8200137AD0 /* CustomShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomShape.swift; sourceTree = "<group>"; };
+		A80702D528230E8200137AD0 /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		A80702D628230E8200137AD0 /* TopDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopDetailView.swift; sourceTree = "<group>"; };
+		A80702D728230E8200137AD0 /* QuantityFavView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuantityFavView.swift; sourceTree = "<group>"; };
+		A80702DE28230EA100137AD0 /* ProductDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		A80702E228233D8B00137AD0 /* AppUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
+		A80702E528233EF700137AD0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A80702E728233F3C00137AD0 /* KeyProError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyProError.swift; sourceTree = "<group>"; };
+		A80702E92823402700137AD0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A80702EB282342B300137AD0 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		A80702EF28237E0F00137AD0 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		A80702F128237E4C00137AD0 /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
+		A80702F32823C4B800137AD0 /* AppViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViews.swift; sourceTree = "<group>"; };
+		A80702F528240EB100137AD0 /* Addressform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Addressform.swift; sourceTree = "<group>"; };
+		A80702F628240EB100137AD0 /* PaymentMedthod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMedthod.swift; sourceTree = "<group>"; };
+		A80702F728240EB100137AD0 /* Checkoutbutton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checkoutbutton.swift; sourceTree = "<group>"; };
+		A80702FB28240EBC00137AD0 /* RegisterPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPage.swift; sourceTree = "<group>"; };
+		A80702FC28240EBC00137AD0 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		A80702FD28240EBC00137AD0 /* Checkout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checkout.swift; sourceTree = "<group>"; };
+		A80702FE28240EBC00137AD0 /* MyOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOrder.swift; sourceTree = "<group>"; };
+		A80702FF28240EBC00137AD0 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		A88CEA3C2822AA46002145FA /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		A88CEA3F2822AAD3002145FA /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
+		A88CEA412822AAE2002145FA /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
+		A88CEA432822AAF1002145FA /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
+		A88CEA462822AB5B002145FA /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		A88CEA482822AB9B002145FA /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
+		A88CEA4A2822B62A002145FA /* PaymentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentButton.swift; sourceTree = "<group>"; };
+		A89FD9E3282274A7001273AB /* KeyPro-CSC461.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KeyPro-CSC461.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A89FD9E6282274A7001273AB /* KeyPro_CSC461App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPro_CSC461App.swift; sourceTree = "<group>"; };
+		A89FD9E8282274A7001273AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A89FD9EA282274AB001273AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A89FD9ED282274AB001273AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A89FD9F3282274AC001273AB /* KeyPro-CSC461Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KeyPro-CSC461Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A89FD9F7282274AC001273AB /* KeyPro_CSC461Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPro_CSC461Tests.swift; sourceTree = "<group>"; };
+		A89FD9FD282274AC001273AB /* KeyPro-CSC461UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KeyPro-CSC461UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A89FDA01282274AC001273AB /* KeyPro_CSC461UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPro_CSC461UITests.swift; sourceTree = "<group>"; };
+		A89FDA03282274AC001273AB /* KeyPro_CSC461UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPro_CSC461UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A8A75B002824762C00AB2FC1 /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A89FD9E0282274A7001273AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA4E8FFB6931EB64F088459 /* Pods_KeyPro_CSC461.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A89FD9F0282274AC001273AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EC4DA7CDBD894913E935242 /* Pods_KeyPro_CSC461Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A89FD9FA282274AC001273AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61FC3DB6525723D18CF115F7 /* Pods_KeyPro_CSC461_KeyPro_CSC461UITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		304A685C1CEC82611EF30B03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07863C4566BDBD92D04D702B /* Pods_KeyPro_CSC461.framework */,
+				7348BB0954E188AC485CBFE6 /* Pods_KeyPro_CSC461_KeyPro_CSC461UITests.framework */,
+				44933656E84B9BC8E41422E9 /* Pods_KeyPro_CSC461Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D9EC62F0D7D759F02E32263 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2095A534448185C29EE99C75 /* Pods-KeyPro-CSC461.debug.xcconfig */,
+				4E1ABCB778C52EADEF0514AE /* Pods-KeyPro-CSC461.release.xcconfig */,
+				93E94189C1814B3573191DFA /* Pods-KeyPro-CSC461-KeyPro-CSC461UITests.debug.xcconfig */,
+				1BCA43D0FCC51C72381255C5 /* Pods-KeyPro-CSC461-KeyPro-CSC461UITests.release.xcconfig */,
+				16D94AC9CD9B6B02D88EC3E6 /* Pods-KeyPro-CSC461Tests.debug.xcconfig */,
+				79CA4803CA44793FC38A63BC /* Pods-KeyPro-CSC461Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A80702E028233CE600137AD0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A80702EB282342B300137AD0 /* AuthViewModel.swift */,
+				A80702F128237E4C00137AD0 /* TransactionViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A80702E128233D5A00137AD0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A80702E228233D8B00137AD0 /* AppUtils.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A80702E428233EDE00137AD0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A80702E528233EF700137AD0 /* Constants.swift */,
+				A80702E728233F3C00137AD0 /* KeyProError.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A88CEA392822A9D8002145FA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A88CEA3C2822AA46002145FA /* Product.swift */,
+				A80702E92823402700137AD0 /* User.swift */,
+				A80702EF28237E0F00137AD0 /* Transaction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A88CEA3E2822AAA0002145FA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A88CEA3F2822AAD3002145FA /* ProductCard.swift */,
+				A88CEA412822AAE2002145FA /* ProductRow.swift */,
+				A88CEA432822AAF1002145FA /* CartButton.swift */,
+				A88CEA4A2822B62A002145FA /* PaymentButton.swift */,
+				A80702D328230E8200137AD0 /* AddToCart.swift */,
+				A80702D428230E8200137AD0 /* CustomShape.swift */,
+				A80702D528230E8200137AD0 /* Header.swift */,
+				A80702D228230E8200137AD0 /* NavigationBar.swift */,
+				A80702D728230E8200137AD0 /* QuantityFavView.swift */,
+				A80702D628230E8200137AD0 /* TopDetailView.swift */,
+				A80702F528240EB100137AD0 /* Addressform.swift */,
+				A80702F728240EB100137AD0 /* Checkoutbutton.swift */,
+				A80702F628240EB100137AD0 /* PaymentMedthod.swift */,
+				A8A75B002824762C00AB2FC1 /* TabBar.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A88CEA452822AB40002145FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A88CEA3E2822AAA0002145FA /* Components */,
+				A89FD9E8282274A7001273AB /* ContentView.swift */,
+				A88CEA462822AB5B002145FA /* CartView.swift */,
+				A80702DE28230EA100137AD0 /* ProductDetailView.swift */,
+				A80702FD28240EBC00137AD0 /* Checkout.swift */,
+				A80702FF28240EBC00137AD0 /* Home.swift */,
+				A80702FC28240EBC00137AD0 /* Login.swift */,
+				A80702FE28240EBC00137AD0 /* MyOrder.swift */,
+				A80702FB28240EBC00137AD0 /* RegisterPage.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A89FD9DA282274A7001273AB = {
+			isa = PBXGroup;
+			children = (
+				A89FD9E5282274A7001273AB /* KeyPro-CSC461 */,
+				A89FD9F6282274AC001273AB /* KeyPro-CSC461Tests */,
+				A89FDA00282274AC001273AB /* KeyPro-CSC461UITests */,
+				A89FD9E4282274A7001273AB /* Products */,
+				9D9EC62F0D7D759F02E32263 /* Pods */,
+				304A685C1CEC82611EF30B03 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A89FD9E4282274A7001273AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A89FD9E3282274A7001273AB /* KeyPro-CSC461.app */,
+				A89FD9F3282274AC001273AB /* KeyPro-CSC461Tests.xctest */,
+				A89FD9FD282274AC001273AB /* KeyPro-CSC461UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A89FD9E5282274A7001273AB /* KeyPro-CSC461 */ = {
+			isa = PBXGroup;
+			children = (
+				A80702E428233EDE00137AD0 /* Services */,
+				A80702E128233D5A00137AD0 /* Utilities */,
+				A80702E028233CE600137AD0 /* ViewModels */,
+				A88CEA452822AB40002145FA /* Views */,
+				A88CEA392822A9D8002145FA /* Models */,
+				A89FD9E6282274A7001273AB /* KeyPro_CSC461App.swift */,
+				A80702F32823C4B800137AD0 /* AppViews.swift */,
+				A89FD9EA282274AB001273AB /* Assets.xcassets */,
+				A89FD9EC282274AB001273AB /* Preview Content */,
+				A88CEA482822AB9B002145FA /* CartManager.swift */,
+			);
+			path = "KeyPro-CSC461";
+			sourceTree = "<group>";
+		};
+		A89FD9EC282274AB001273AB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A89FD9ED282274AB001273AB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A89FD9F6282274AC001273AB /* KeyPro-CSC461Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A89FD9F7282274AC001273AB /* KeyPro_CSC461Tests.swift */,
+			);
+			path = "KeyPro-CSC461Tests";
+			sourceTree = "<group>";
+		};
+		A89FDA00282274AC001273AB /* KeyPro-CSC461UITests */ = {
+			isa = PBXGroup;
+			children = (
+				A89FDA01282274AC001273AB /* KeyPro_CSC461UITests.swift */,
+				A89FDA03282274AC001273AB /* KeyPro_CSC461UITestsLaunchTests.swift */,
+			);
+			path = "KeyPro-CSC461UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A89FD9E2282274A7001273AB /* KeyPro-CSC461 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A89FDA07282274AC001273AB /* Build configuration list for PBXNativeTarget "KeyPro-CSC461" */;
+			buildPhases = (
+				8B006E8D5238726EE1D5EA62 /* [CP] Check Pods Manifest.lock */,
+				A89FD9DF282274A7001273AB /* Sources */,
+				A89FD9E0282274A7001273AB /* Frameworks */,
+				A89FD9E1282274A7001273AB /* Resources */,
+				186EE0BA29BB15A88D4294D1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KeyPro-CSC461";
+			productName = "KeyPro-CSC461";
+			productReference = A89FD9E3282274A7001273AB /* KeyPro-CSC461.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A89FD9F2282274AC001273AB /* KeyPro-CSC461Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A89FDA0A282274AC001273AB /* Build configuration list for PBXNativeTarget "KeyPro-CSC461Tests" */;
+			buildPhases = (
+				F30DD9755444AA2DC707C096 /* [CP] Check Pods Manifest.lock */,
+				A89FD9EF282274AC001273AB /* Sources */,
+				A89FD9F0282274AC001273AB /* Frameworks */,
+				A89FD9F1282274AC001273AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A89FD9F5282274AC001273AB /* PBXTargetDependency */,
+			);
+			name = "KeyPro-CSC461Tests";
+			productName = "KeyPro-CSC461Tests";
+			productReference = A89FD9F3282274AC001273AB /* KeyPro-CSC461Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A89FD9FC282274AC001273AB /* KeyPro-CSC461UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A89FDA0D282274AC001273AB /* Build configuration list for PBXNativeTarget "KeyPro-CSC461UITests" */;
+			buildPhases = (
+				EFB62FB6F278C876F7601C5A /* [CP] Check Pods Manifest.lock */,
+				A89FD9F9282274AC001273AB /* Sources */,
+				A89FD9FA282274AC001273AB /* Frameworks */,
+				A89FD9FB282274AC001273AB /* Resources */,
+				088AF6FF74A335E2ABA8FBE5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A89FD9FF282274AC001273AB /* PBXTargetDependency */,
+			);
+			name = "KeyPro-CSC461UITests";
+			productName = "KeyPro-CSC461UITests";
+			productReference = A89FD9FD282274AC001273AB /* KeyPro-CSC461UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A89FD9DB282274A7001273AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					A89FD9E2282274A7001273AB = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					A89FD9F2282274AC001273AB = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = A89FD9E2282274A7001273AB;
+					};
+					A89FD9FC282274AC001273AB = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = A89FD9E2282274A7001273AB;
+					};
+				};
+			};
+			buildConfigurationList = A89FD9DE282274A7001273AB /* Build configuration list for PBXProject "KeyPro-CSC461" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A89FD9DA282274A7001273AB;
+			productRefGroup = A89FD9E4282274A7001273AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A89FD9E2282274A7001273AB /* KeyPro-CSC461 */,
+				A89FD9F2282274AC001273AB /* KeyPro-CSC461Tests */,
+				A89FD9FC282274AC001273AB /* KeyPro-CSC461UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A89FD9E1282274A7001273AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A89FD9EE282274AB001273AB /* Preview Assets.xcassets in Resources */,
+				A89FD9EB282274AB001273AB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A89FD9F1282274AC001273AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A89FD9FB282274AC001273AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		088AF6FF74A335E2ABA8FBE5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KeyPro-CSC461-KeyPro-CSC461UITests/Pods-KeyPro-CSC461-KeyPro-CSC461UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KeyPro-CSC461-KeyPro-CSC461UITests/Pods-KeyPro-CSC461-KeyPro-CSC461UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KeyPro-CSC461-KeyPro-CSC461UITests/Pods-KeyPro-CSC461-KeyPro-CSC461UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		186EE0BA29BB15A88D4294D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KeyPro-CSC461/Pods-KeyPro-CSC461-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KeyPro-CSC461/Pods-KeyPro-CSC461-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KeyPro-CSC461/Pods-KeyPro-CSC461-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B006E8D5238726EE1D5EA62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KeyPro-CSC461-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFB62FB6F278C876F7601C5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KeyPro-CSC461-KeyPro-CSC461UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F30DD9755444AA2DC707C096 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KeyPro-CSC461Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A89FD9DF282274A7001273AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80702F028237E0F00137AD0 /* Transaction.swift in Sources */,
+				A88CEA4B2822B62A002145FA /* PaymentButton.swift in Sources */,
+				A80702E628233EF700137AD0 /* Constants.swift in Sources */,
+				A807030128240EBC00137AD0 /* Login.swift in Sources */,
+				A80702FA28240EB100137AD0 /* Checkoutbutton.swift in Sources */,
+				A89FD9E9282274A7001273AB /* ContentView.swift in Sources */,
+				A80702E828233F3C00137AD0 /* KeyProError.swift in Sources */,
+				A80702DF28230EA100137AD0 /* ProductDetailView.swift in Sources */,
+				A80702DC28230E8200137AD0 /* TopDetailView.swift in Sources */,
+				A88CEA492822AB9B002145FA /* CartManager.swift in Sources */,
+				A80702F928240EB100137AD0 /* PaymentMedthod.swift in Sources */,
+				A80702F828240EB100137AD0 /* Addressform.swift in Sources */,
+				A80702F42823C4B900137AD0 /* AppViews.swift in Sources */,
+				A88CEA472822AB5B002145FA /* CartView.swift in Sources */,
+				A807030428240EBC00137AD0 /* Home.swift in Sources */,
+				A80702D828230E8200137AD0 /* NavigationBar.swift in Sources */,
+				A80702F228237E4C00137AD0 /* TransactionViewModel.swift in Sources */,
+				A807030028240EBC00137AD0 /* RegisterPage.swift in Sources */,
+				A80702DD28230E8200137AD0 /* QuantityFavView.swift in Sources */,
+				A80702E328233D8B00137AD0 /* AppUtils.swift in Sources */,
+				A89FD9E7282274A7001273AB /* KeyPro_CSC461App.swift in Sources */,
+				A88CEA422822AAE2002145FA /* ProductRow.swift in Sources */,
+				A807030328240EBC00137AD0 /* MyOrder.swift in Sources */,
+				A80702D928230E8200137AD0 /* AddToCart.swift in Sources */,
+				A88CEA3D2822AA46002145FA /* Product.swift in Sources */,
+				A80702DB28230E8200137AD0 /* Header.swift in Sources */,
+				A88CEA402822AAD3002145FA /* ProductCard.swift in Sources */,
+				A80702EC282342B300137AD0 /* AuthViewModel.swift in Sources */,
+				A88CEA442822AAF1002145FA /* CartButton.swift in Sources */,
+				A807030228240EBC00137AD0 /* Checkout.swift in Sources */,
+				A8A75B012824762C00AB2FC1 /* TabBar.swift in Sources */,
+				A80702DA28230E8200137AD0 /* CustomShape.swift in Sources */,
+				A80702EA2823402700137AD0 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A89FD9EF282274AC001273AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A89FD9F8282274AC001273AB /* KeyPro_CSC461Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A89FD9F9282274AC001273AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A89FDA04282274AC001273AB /* KeyPro_CSC461UITestsLaunchTests.swift in Sources */,
+				A89FDA02282274AC001273AB /* KeyPro_CSC461UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A89FD9F5282274AC001273AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A89FD9E2282274A7001273AB /* KeyPro-CSC461 */;
+			targetProxy = A89FD9F4282274AC001273AB /* PBXContainerItemProxy */;
+		};
+		A89FD9FF282274AC001273AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A89FD9E2282274A7001273AB /* KeyPro-CSC461 */;
+			targetProxy = A89FD9FE282274AC001273AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A89FDA05282274AC001273AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A89FDA06282274AC001273AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A89FDA08282274AC001273AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2095A534448185C29EE99C75 /* Pods-KeyPro-CSC461.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KeyPro-CSC461/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ballstk.KeyPro-CSC461";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A89FDA09282274AC001273AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E1ABCB778C52EADEF0514AE /* Pods-KeyPro-CSC461.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KeyPro-CSC461/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ballstk.KeyPro-CSC461";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A89FDA0B282274AC001273AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16D94AC9CD9B6B02D88EC3E6 /* Pods-KeyPro-CSC461Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ballstk.KeyPro-CSC461Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeyPro-CSC461.app/KeyPro-CSC461";
+			};
+			name = Debug;
+		};
+		A89FDA0C282274AC001273AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79CA4803CA44793FC38A63BC /* Pods-KeyPro-CSC461Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ballstk.KeyPro-CSC461Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeyPro-CSC461.app/KeyPro-CSC461";
+			};
+			name = Release;
+		};
+		A89FDA0E282274AC001273AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93E94189C1814B3573191DFA /* Pods-KeyPro-CSC461-KeyPro-CSC461UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ballstk.KeyPro-CSC461UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "KeyPro-CSC461";
+			};
+			name = Debug;
+		};
+		A89FDA0F282274AC001273AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BCA43D0FCC51C72381255C5 /* Pods-KeyPro-CSC461-KeyPro-CSC461UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ballstk.KeyPro-CSC461UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "KeyPro-CSC461";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A89FD9DE282274A7001273AB /* Build configuration list for PBXProject "KeyPro-CSC461" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A89FDA05282274AC001273AB /* Debug */,
+				A89FDA06282274AC001273AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A89FDA07282274AC001273AB /* Build configuration list for PBXNativeTarget "KeyPro-CSC461" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A89FDA08282274AC001273AB /* Debug */,
+				A89FDA09282274AC001273AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A89FDA0A282274AC001273AB /* Build configuration list for PBXNativeTarget "KeyPro-CSC461Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A89FDA0B282274AC001273AB /* Debug */,
+				A89FDA0C282274AC001273AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A89FDA0D282274AC001273AB /* Build configuration list for PBXNativeTarget "KeyPro-CSC461UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A89FDA0E282274AC001273AB /* Debug */,
+				A89FDA0F282274AC001273AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A89FD9DB282274A7001273AB /* Project object */;
+}
