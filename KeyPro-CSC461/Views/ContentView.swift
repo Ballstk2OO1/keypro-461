@@ -14,51 +14,51 @@ struct ContentView: View {
     
     func getAllProduct() {
         /* Login
-        var model = requestLoginModel()
-        model.username = "Ballstk"
-        model.password = "testtest"
-        AuthViewModel().login(reqObject: model) { result in
+         var model = requestLoginModel()
+         model.username = "Ballstk"
+         model.password = "testtest"
+         AuthViewModel().login(reqObject: model) { result in
+         switch result {
+         case .success(let response):
+         print("Success",response)
+         AppUtils.saveUsrEmail(email: response.email ?? "")
+         AppUtils.saveUsrUsername(username: response.username ?? "")
+         AppUtils.saveUsrName(firstname: response.name?.firstname ?? "", lastname: response.name?.lastname ?? "")
+         
+         case .failure(let error):
+         switch error{
+         case .BackEndError(let msg):
+         print("Error: \(msg)")
+         case .Non200StatusCodeError(let val):
+         print("Error Code: \(val.status) - \(val.message)")
+         case .UnParsableError:
+         print("Error \(error)")
+         case .NoNetworkError:
+         print("No Network Error")
+         }
+         }
+         }
+         */
+        TransactionViewModel().getAll() { result in
             switch result {
-            case .success(let response):
-                print("Success",response)
-                AppUtils.saveUsrEmail(email: response.email ?? "")
-                AppUtils.saveUsrUsername(username: response.username ?? "")
-                AppUtils.saveUsrName(firstname: response.name?.firstname ?? "", lastname: response.name?.lastname ?? "")
-                
-            case .failure(let error):
-                switch error{
-                case .BackEndError(let msg):
-                    print("Error: \(msg)")
+            case .success(let res):
+                print("HERE \(res)")
+                for i in 0..<(res.switches?.count ?? 0) {
+                    productList.append(Product(name: res.switches?[i].name ?? "", image: "\(Constants.ENDPOINT)\(res.switches?[i].image ?? "")", price: res.switches?[i].price_per_piece ?? 0.0, description: res.switches?[i].description))
+                }
+            case .failure(let err):
+                switch err {
                 case .Non200StatusCodeError(let val):
-                    print("Error Code: \(val.status) - \(val.message)")
-                case .UnParsableError:
-                    print("Error \(error)")
+                    print("Error code \(val.status) \(val.message)")
+                case .BackEndError(let msg):
+                    print("Message: \(msg)")
                 case .NoNetworkError:
                     print("No Network Error")
+                case .UnParsableError:
+                    print("Error \(err)")
                 }
             }
         }
-         */
-                TransactionViewModel().getAll() { result in
-                    switch result {
-                    case .success(let res):
-                        print("HERE \(res)")
-                        for i in 0..<(res.switches?.count ?? 0) {
-                            productList.append(Product(name: res.switches?[i].name ?? "", image: "\(Constants.ENDPOINT)\(res.switches?[i].image ?? "")", price: res.switches?[i].price_per_piece ?? 0.0, description: res.switches?[i].description))
-                        }
-                    case .failure(let err):
-                        switch err {
-                        case .Non200StatusCodeError(let val):
-                            print("Error code \(val.status) \(val.message)")
-                        case .BackEndError(let msg):
-                            print("Message: \(msg)")
-                        case .NoNetworkError:
-                            print("No Network Error")
-                        case .UnParsableError:
-                            print("Error \(err)")
-                        }
-                    }
-                }
     }
     
     var body: some View {

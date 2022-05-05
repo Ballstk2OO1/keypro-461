@@ -25,10 +25,8 @@ struct KeyPro_CSC461App: App {
         
     var body: some Scene {
         WindowGroup {
-            if rootView.viewId == .LoginView {
-                // Login
-                NavigationBar()
-//                ContentView()
+            if rootView.viewId == .LoginView {                
+                Home()
             } else {
                 ContentView()                    
             }
