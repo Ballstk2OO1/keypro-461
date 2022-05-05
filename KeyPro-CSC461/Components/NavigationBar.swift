@@ -24,6 +24,9 @@ struct NavigationBar: View {
                     .foregroundColor(.gray)
             })
         }//<--HSTACK
+        .onAppear {            
+            KeyPro_CSC461App(rootView: .MainAppView)
+        }
     }
 }
 

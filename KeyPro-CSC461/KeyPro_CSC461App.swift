@@ -9,21 +9,28 @@ import SwiftUI
 
 @main
 struct KeyPro_CSC461App: App {
-    var rootView: String = "login"
+    @ObservedObject var rootView = RootView.shared
+    
+    init(rootView: AppViews) {
+        self.rootView.viewId = rootView
+    }
+    
     init() {
         if AppUtils.getUsrAuthToken() == nil {
-            rootView = "login"
+            self.rootView.viewId = .LoginView
         } else {
-            rootView = "main"
+            self.rootView.viewId = .MainAppView
         }
     }
+        
     var body: some Scene {
         WindowGroup {
-            if rootView == "login" {
+            if rootView.viewId == .LoginView {
                 // Login
-                ContentView()
+                NavigationBar()
+//                ContentView()
             } else {
-                ContentView()
+                ContentView()                    
             }
         }
     }
