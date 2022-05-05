@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.4.1)
+  - JWTDecode (2.6.3)
+  - Kingfisher (7.1.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - JWTDecode (~> 2.6)
+  - Kingfisher (~> 7.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - JWTDecode
+    - Kingfisher
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  JWTDecode: 33e5e26e5ddbd21b2065820894c08fef0cad9509
+  Kingfisher: 44ed6a8504763f27bab46163adfac83f5deb240c
+
+PODFILE CHECKSUM: 75774f2c1312b47a849153b64cebc52b9133c8f5
+
+COCOAPODS: 1.11.2
