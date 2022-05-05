@@ -14,35 +14,30 @@ struct Checkout: View {
     var body: some View {
         
         HStack {
-                    VStack(alignment: .leading) {
-                        Text("Check Out")
-                            .font(.system(size: 28, weight: .bold, design: .serif))
-                            .foregroundColor(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                            .padding(.top, 5)
-                        Spacer()
-                    }
-                    .padding()
+            VStack(alignment: .leading) {
+                Text("Check Out")
+                    .font(.system(size: 28, weight: .bold, design: .serif))
+                    .foregroundColor(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                    .padding(.top, 5)
+                Spacer()
+            }
+            .padding()
         }
         
         Addressform()
-        .padding()
+            .padding()
         
         PaymentMedthod()
-        .padding()
-        
-        
-        
+            .padding()
+                        
         VStack (alignment: .leading, spacing: 8, content:{
             Text("Order")
                 .font(.system(size: 20, weight: .semibold, design: .serif ))
                 .fontWeight(.bold)
                 .foregroundColor(.black)
             
-            
-          
-            
             Divider()
-        
+            
             HStack(spacing: 20) {
                 Image("s3")
                     .resizable()
@@ -60,14 +55,18 @@ struct Checkout: View {
                 Spacer()
             }
             
-        
-        
         })
         .padding()
         
-        Checkoutbutton()
-            .padding(.top,250)
-        .zIndex(1)
+        NavigationLink {
+            MyOrder()
+        } label: {
+//            Checkoutbutton()
+//                .padding(.top,250)
+//                .zIndex(1)
+            PaymentButton(action: {})
+                .padding()
+        }        
     }
     
 }

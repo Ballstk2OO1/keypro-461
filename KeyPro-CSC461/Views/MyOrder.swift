@@ -56,7 +56,7 @@ struct MyOrder: View {
                     Text("Total price")
                 }
                 Divider()
-            }//VStack
+            } //VStack
             
             
             
@@ -68,7 +68,7 @@ struct MyOrder: View {
         }
         .padding()
         
-        
+        .navigationBarBackButtonHidden(true)
         
         
     }

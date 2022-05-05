@@ -44,7 +44,7 @@ extension PaymentButton {
     
     class Coordinator: NSObject {
         var action: () -> Void
-        var button = PKPaymentButton(paymentButtonType: .checkout, paymentButtonStyle: .automatic)
+        var button = PKPaymentButton(paymentButtonType: .order, paymentButtonStyle: .automatic)
         
         init(action: @escaping () -> Void) {
             self.action = action

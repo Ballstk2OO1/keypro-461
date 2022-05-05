@@ -24,7 +24,7 @@ struct PaymentMedthod: View {
             VStack{
                 
                 Group {
-                    Toggle("ชำระผ่าน QR Code", isOn: $isSelected)
+                    Toggle("Apple Pay", isOn: $isSelected)
                 }
                 
             

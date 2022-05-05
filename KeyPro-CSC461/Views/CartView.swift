@@ -10,29 +10,42 @@ import SwiftUI
 struct CartView: View {
     @EnvironmentObject var cartManager: CartManager
     
+//    func checkout() {
+//        var model = requestCreateTransactionModel()
+//        model.item = cartManager.products
+//        model.total = cartManager.total
+//
+//        TransactionViewModel().create(reqObj: model, then: <#T##(Result<createTransactionDataModel, ServiceError>) -> Void#>)
+//    }
+    
     var body: some View {
-        ScrollView {
-            if cartManager.products.count > 0 {
-                
-                ForEach(0..<cartManager.products.count, id: \.self) { index in ProductRow(product: cartManager.products[index], index: index) }
-                
-                HStack {
-                    Text("Total")
-                    Spacer()
-                    Text(String(format: "%.2f฿", cartManager.total))
-                        .bold()
-                }
-                .padding()
-                
-                PaymentButton(action: {})
+//        NavigationView {
+            ScrollView {
+                if cartManager.products.count > 0 {
+                    
+                    ForEach(0..<cartManager.products.count, id: \.self) { index in ProductRow(product: cartManager.products[index], index: index) }
+                    
+                    HStack {
+                        Text("Total")
+                        Spacer()
+                        Text(String(format: "%.2f฿", cartManager.total))
+                            .bold()
+                    }
                     .padding()
-                
-            } else {
-                Text("Your cart is empty")
+                    
+                    NavigationLink {
+                        Checkout()
+                    } label: {
+                        PaymentButton(action: {})
+                            .padding()
+                    }
+                } else {
+                    Text("Your cart is empty")
+                }
             }
-        }
-        .navigationTitle("My Cart")
-        .padding(.top)
+            .navigationTitle("My Cart")
+            .padding(.top)
+//        }
     }
 }
 

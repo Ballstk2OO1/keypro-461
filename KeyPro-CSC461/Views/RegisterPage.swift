@@ -23,17 +23,20 @@ struct RegisterPage: View {
     
     func register() {
         var model = requestRegisterModel()
-        model.name?.firstname = firstname
-        model.name?.lastname = lastname
+        var nameModel = requestNameModel()
+        nameModel.firstname = firstname
+        nameModel.lastname = lastname
         model.email = email
         model.username = username
         model.password = password
+        model.name = nameModel
         
         AuthViewModel().register(reqObject: model) { result in
             isLoading.toggle()
             switch result {
             case .success(let response):
-                print("Success",response)
+                
+                print("Success", response)
                 AppUtils.saveUsrEmail(email: response.email ?? "")
                 onSubmit.toggle()
                 
@@ -53,7 +56,7 @@ struct RegisterPage: View {
         }
     }
     
-    var body: some View {
+    var body: some View {        
         VStack{
             
             Text("Register")

@@ -12,33 +12,7 @@ struct ContentView: View {
     var columns = [GridItem(.adaptive(minimum: 160), spacing: 20)]
     @State var productList = [Product]()
     
-    func getAllProduct() {
-        /* Login
-         var model = requestLoginModel()
-         model.username = "Ballstk"
-         model.password = "testtest"
-         AuthViewModel().login(reqObject: model) { result in
-         switch result {
-         case .success(let response):
-         print("Success",response)
-         AppUtils.saveUsrEmail(email: response.email ?? "")
-         AppUtils.saveUsrUsername(username: response.username ?? "")
-         AppUtils.saveUsrName(firstname: response.name?.firstname ?? "", lastname: response.name?.lastname ?? "")
-         
-         case .failure(let error):
-         switch error{
-         case .BackEndError(let msg):
-         print("Error: \(msg)")
-         case .Non200StatusCodeError(let val):
-         print("Error Code: \(val.status) - \(val.message)")
-         case .UnParsableError:
-         print("Error \(error)")
-         case .NoNetworkError:
-         print("No Network Error")
-         }
-         }
-         }
-         */
+    func getAllProduct() {        
         TransactionViewModel().getAll() { result in
             switch result {
             case .success(let res):

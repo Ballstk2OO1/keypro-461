@@ -9,7 +9,6 @@ import SwiftUI
 
 struct Checkoutbutton: View {
     
-    
     var body: some View {
         Button(action: {}, label: {
             Text("Check Out")
