@@ -75,7 +75,7 @@ struct Login: View {
                     .fontWeight(.bold)
                     .foregroundColor(.gray)
                 
-                TextField("Password", text:$password )
+                SecureField("Password", text:$password )
                     .font(.system(size: 20, weight: .semibold))
                     .foregroundColor(.black)
                     .padding(.top,5)

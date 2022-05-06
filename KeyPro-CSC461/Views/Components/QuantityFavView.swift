@@ -35,10 +35,10 @@ struct QuantityFavView: View {
             
         Spacer()
             
-            Button(action: {}, label: {
-                Image(systemName: "heart.circle")
-                    .foregroundColor(.red)
-            })
+//            Button(action: {}, label: {
+//                Image(systemName: "heart.circle")
+//                    .foregroundColor(.red)
+//            })
             
         })//HSTACK
         .font(.title)

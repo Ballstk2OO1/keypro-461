@@ -48,6 +48,8 @@
 		A89FDA02282274AC001273AB /* KeyPro_CSC461UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89FDA01282274AC001273AB /* KeyPro_CSC461UITests.swift */; };
 		A89FDA04282274AC001273AB /* KeyPro_CSC461UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89FDA03282274AC001273AB /* KeyPro_CSC461UITestsLaunchTests.swift */; };
 		A8A75B012824762C00AB2FC1 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A75B002824762C00AB2FC1 /* TabBar.swift */; };
+		A8A75B032824894700AB2FC1 /* HistoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A75B022824894700AB2FC1 /* HistoryDetailView.swift */; };
+		A8A75B0528248FDB00AB2FC1 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A75B0428248FDB00AB2FC1 /* Account.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +120,8 @@
 		A89FDA01282274AC001273AB /* KeyPro_CSC461UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPro_CSC461UITests.swift; sourceTree = "<group>"; };
 		A89FDA03282274AC001273AB /* KeyPro_CSC461UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPro_CSC461UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A8A75B002824762C00AB2FC1 /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		A8A75B022824894700AB2FC1 /* HistoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailView.swift; sourceTree = "<group>"; };
+		A8A75B0428248FDB00AB2FC1 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,7 +243,9 @@
 				A80702FF28240EBC00137AD0 /* Home.swift */,
 				A80702FC28240EBC00137AD0 /* Login.swift */,
 				A80702FE28240EBC00137AD0 /* MyOrder.swift */,
+				A8A75B022824894700AB2FC1 /* HistoryDetailView.swift */,
 				A80702FB28240EBC00137AD0 /* RegisterPage.swift */,
+				A8A75B0428248FDB00AB2FC1 /* Account.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -546,6 +552,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8A75B032824894700AB2FC1 /* HistoryDetailView.swift in Sources */,
 				A80702F028237E0F00137AD0 /* Transaction.swift in Sources */,
 				A88CEA4B2822B62A002145FA /* PaymentButton.swift in Sources */,
 				A80702E628233EF700137AD0 /* Constants.swift in Sources */,
@@ -565,6 +572,7 @@
 				A80702F228237E4C00137AD0 /* TransactionViewModel.swift in Sources */,
 				A807030028240EBC00137AD0 /* RegisterPage.swift in Sources */,
 				A80702DD28230E8200137AD0 /* QuantityFavView.swift in Sources */,
+				A8A75B0528248FDB00AB2FC1 /* Account.swift in Sources */,
 				A80702E328233D8B00137AD0 /* AppUtils.swift in Sources */,
 				A89FD9E7282274A7001273AB /* KeyPro_CSC461App.swift in Sources */,
 				A88CEA422822AAE2002145FA /* ProductRow.swift in Sources */,

@@ -14,15 +14,15 @@ struct TabBar: View {
         HStack(){
                     
                     Button(action: {
-                        //KKeyPro_CSC461App: .Product)
+                        KeyPro_CSC461App(rootView: .MainAppView)
                     }){
                         VStack{
                             Image(systemName: "heart.fill")
                                 .resizable()
                                 .frame(width: 25, height: 25)
-                                .foregroundColor(Color.purple)
+                                .foregroundColor(Color.black)
                             Text("Product")
-                                .foregroundColor(Color.purple)
+                                .foregroundColor(Color.black)
                         }
                         .frame(width: UIScreen.main.bounds.width/3.5)
                     }
@@ -30,29 +30,29 @@ struct TabBar: View {
                 
             
                     Button(action: {
-                        //KeyPro_CSC461App(rootView: .Product)
+                        KeyPro_CSC461App(rootView: .OrderView)
                     }){
                         VStack{
                             Image(systemName: "bag.fill")
                                 .resizable()
                                 .frame(width: 25, height: 25)
-                                .foregroundColor(Color.purple)
+                                .foregroundColor(Color.black)
                             Text("My Order")
-                                .foregroundColor(Color.purple)
+                                .foregroundColor(Color.black)
                         }
                         .frame(width: UIScreen.main.bounds.width/3.5)
                     }
 
                     Button(action: {
-                        //KeyPro_CSC461App(rootView: .Product)
+                        KeyPro_CSC461App(rootView: .UserView)
                     }){
                         VStack{
                             Image(systemName: "person.fill")
                                 .resizable()
                                 .frame(width: 25, height: 25)
-                                .foregroundColor(Color.purple)
+                                .foregroundColor(Color.black)
                             Text("Account")
-                                .foregroundColor(Color.purple)
+                                .foregroundColor(Color.black)
                         }
                          .frame(width: UIScreen.main.bounds.width/3.5)
                     }
@@ -60,7 +60,7 @@ struct TabBar: View {
                 .frame(width: UIScreen.main.bounds.width, alignment: .center)
         
                 .padding(.top, 12)
-                .padding(.bottom, (UIApplication.shared.windows.first?.safeAreaInsets.bottom)! + 15)
+//                .padding(.bottom, (UIApplication.shared.windows.first?.safeAreaInsets.bottom)! + 15)
                 .background(Color.white.opacity(0.5))
     
     

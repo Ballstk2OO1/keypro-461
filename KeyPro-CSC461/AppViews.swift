@@ -10,6 +10,8 @@ import Foundation
 enum AppViews {
     case LoginView
     case MainAppView
+    case OrderView
+    case UserView
 }
 
 

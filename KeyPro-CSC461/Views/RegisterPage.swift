@@ -123,7 +123,7 @@ struct RegisterPage: View {
                     .font(.system(size: 20, weight: .semibold))
                     .foregroundColor(.black)
                     .padding(.top,5)
-                
+                    .keyboardType(.emailAddress)
                 Divider()
                 
             })
@@ -134,7 +134,7 @@ struct RegisterPage: View {
                     .fontWeight(.bold)
                     .foregroundColor(.gray)
                 
-                TextField("Password", text:$password )
+                SecureField("Password", text:$password )
                     .font(.system(size: 20, weight: .semibold))
                     .foregroundColor(.black)
                     .padding(.top,5)
@@ -155,6 +155,9 @@ struct RegisterPage: View {
             .padding(.top,25)
         }
         .padding()
+        .onTapGesture {
+            UIApplication.shared.endEditing()
+        }
     }
     
     struct RegisterPage_Previews: PreviewProvider {

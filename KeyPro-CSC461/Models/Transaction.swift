@@ -78,8 +78,22 @@ struct transactionDataModel: Codable {
     let total: Double?
     let owner_name: String?
     let created: String?
+    
 }
 
 struct requestGetTransactionModel: Encodable {
     var transaction_id: String?
+}
+
+class HistoryObservedModel: ObservableObject {
+    @Published var history: [historyModel]?
+}
+
+class HistoryDetailObservedModel: ObservableObject {
+    @Published var id: String?
+    @Published var item: [itemModel]?
+    @Published var total: Double?
+    @Published var owner_name: String?
+    @Published var created: String?
+    @Published var date: String?
 }

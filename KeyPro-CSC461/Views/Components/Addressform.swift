@@ -24,6 +24,9 @@ struct Addressform: View {
             
             Divider()
         })
+        .onTapGesture {
+            UIApplication.shared.endEditing()
+        }
     }
 }
 

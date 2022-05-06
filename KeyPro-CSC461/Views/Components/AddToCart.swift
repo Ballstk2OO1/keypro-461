@@ -24,7 +24,7 @@ struct AddToCart: View {
             Spacer()
         })//BUTTON
         .padding(15)
-        .background(Color.purple)
+        .background(Color.black)
         .cornerRadius(30)
     }
 }

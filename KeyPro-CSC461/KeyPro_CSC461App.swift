@@ -27,8 +27,12 @@ struct KeyPro_CSC461App: App {
         WindowGroup {
             if rootView.viewId == .LoginView {                
                 Home()
-            } else {
+            } else if rootView.viewId == .MainAppView {
                 ContentView()                    
+            } else if rootView.viewId == .OrderView {
+                MyOrder()
+            } else {
+                Account()
             }
         }
     }

@@ -8,6 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    var body: some View {
+        NavigationView {
+            
+            VStack(spacing: 0) {
+                MainView()
+                TabBar()
+                    .edgesIgnoringSafeArea(.bottom)
+            }
+            
+        }
+        .navigationViewStyle(StackNavigationViewStyle())
+    }
+}
+
+struct MainView: View {
     @StateObject var cartManager = CartManager()
     var columns = [GridItem(.adaptive(minimum: 160), spacing: 20)]
     @State var productList = [Product]()    
@@ -17,6 +32,7 @@ struct ContentView: View {
             switch result {
             case .success(let res):
                 print("HERE \(res)")
+                productList.removeAll()
                 for i in 0..<(res.switches?.count ?? 0) {
                     productList.append(Product(name: res.switches?[i].name ?? "", image: "\(Constants.ENDPOINT)\(res.switches?[i].image ?? "")", price: res.switches?[i].price_per_piece ?? 0.0, description: res.switches?[i].description))
                 }
@@ -36,7 +52,6 @@ struct ContentView: View {
     }
     
     var body: some View {
-        NavigationView {
             ScrollView {
                 LazyVGrid(columns: columns, spacing: 20) {
                     if productList.count > 0 {
@@ -67,8 +82,6 @@ struct ContentView: View {
                     CartButton(numberOfProduct: cartManager.products.count)
                 }
             }
-        }
-        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

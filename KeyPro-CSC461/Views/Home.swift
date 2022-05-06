@@ -53,7 +53,9 @@ struct Home: View {
             
 
         }
-        
+        .onTapGesture {
+            UIApplication.shared.endEditing()
+        }
         ZStack{
 
             if showSignUp{
@@ -74,7 +76,7 @@ struct Home: View {
         .overlay(
         
             HStack{
-                Text(showSignUp ? "New Member" : "Already member?")
+                Text(showSignUp ? "Already member?" : "New Member")
                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                     .foregroundColor(.gray)
                 

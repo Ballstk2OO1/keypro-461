@@ -35,7 +35,7 @@ struct ProductDetailView: View {
                     Text(product.description ?? "")
                         .padding()
                         .font(.body)
-                        .foregroundColor(.gray)
+                        .foregroundColor(.white)
                         .multilineTextAlignment(.leading)
                 })
                 
@@ -51,7 +51,7 @@ struct ProductDetailView: View {
                 
             })//:VSTACK
             .padding(.horizontal)
-            .background(Color(UIColor.systemTeal))
+            .background(Color(UIColor.systemTeal).opacity(0.3))
             .clipShape(CustomShape())
             .padding(.top)
             

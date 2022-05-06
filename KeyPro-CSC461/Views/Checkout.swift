@@ -12,7 +12,6 @@ struct Checkout: View {
     @EnvironmentObject var cartManager: CartManager
     @State var isSelected: Bool = false
     @State var items = [itemModel]()
-    @State var isShow: Bool = false
     
     func createTransaction() {
         for i in 0..<cartManager.products.count {
@@ -29,7 +28,7 @@ struct Checkout: View {
                 switch result {
                 case .success(let response):
                     print("Success",response)
-                    isShow = true
+                    KeyPro_CSC461App(rootView: .OrderView)
                 case .failure(let error):
                     switch error{
                     case .BackEndError(let msg):
@@ -52,7 +51,7 @@ struct Checkout: View {
             VStack(alignment: .leading) {
                 Text("Check Out")
                     .font(.system(size: 28, weight: .bold, design: .serif))
-                    .foregroundColor(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                    .foregroundColor(.black)
                     .padding(.top, 5)
                 Spacer()
             }
@@ -110,10 +109,7 @@ struct Checkout: View {
                 Text("Your cart is empty")
             }
         }
-        
-        NavigationLink(destination: MyOrder(), isActive: $isShow) {
-            EmptyView()
-        }
+                
         PaymentButton(action: {
             createTransaction()
         })
