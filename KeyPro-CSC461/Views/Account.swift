@@ -23,19 +23,19 @@ struct AccountView: View {
     
     var body: some View {
         VStack{
-        
-        Text("My Account")
-            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-            .fontWeight(.bold)
-            .foregroundColor(.black)
-        
-            .kerning(1.9)
-            .frame(maxWidth: .infinity, alignment: .center)
-            Divider()
-                
             
-            .padding(.top,25)
-        
+            Text("My Account")
+                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                .fontWeight(.bold)
+                .foregroundColor(.black)
+            
+                .kerning(1.9)
+                .frame(maxWidth: .infinity, alignment: .center)
+            Divider()
+            
+            
+                .padding(.top,25)
+            
             VStack(alignment: .trailing, spacing: 8, content: {
                 Text("Hi, \(username)")
                     .fontWeight(.bold)
@@ -60,7 +60,7 @@ struct AccountView: View {
                 Text("Lastname : \(name.components(separatedBy: " ")[1])")
                     .fontWeight(.semibold)
                     .foregroundColor(.black)
-
+                
                 
                 Divider()
                 
@@ -101,10 +101,8 @@ struct AccountView: View {
         )
         Spacer()
     }
-    
-    
 }
-  
+
 
 struct Account_Previews: PreviewProvider {
     static var previews: some View {

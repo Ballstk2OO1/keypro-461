@@ -115,48 +115,6 @@ struct MyOrderView: View {
                     Text("No history")
                 }
             }
-            //            VStack{
-            //            Text("Order id")
-            //                .font(.system(size: 18, weight: .semibold, design: .serif))
-            //                .frame(alignment: .leading)
-            //                .foregroundColor(Color.gray)
-            //
-            //            HStack(spacing: 20) {
-            //                Image("s3")
-            //                    .resizable()
-            //                    .aspectRatio(contentMode: .fit)
-            //                    .frame(width: 50)
-            //                    .cornerRadius(10)
-            //
-            //                VStack(alignment: .leading, spacing: 10) {
-            //                    Text("Cherry Red")
-            //                        .bold()
-            //
-            //                    Text(String("500"))
-            //                    }//VStack
-            //
-            //                Button(action: {}, label: {
-            //                    Image(systemName: "chevron.right")
-            //                        .font(.title)
-            //                        .foregroundColor(.gray)
-            //                })//Button
-            //                .frame(alignment: .trailing)
-            //
-            //                }//HStack
-            //            }//VStack
-            
-            //            VStack{
-            //                Divider()
-            //                HStack {
-            //                    Text("1 Item")
-            //                    Spacer()
-            //                    Text("Total price")
-            //                }
-            //                Divider()
-            //            } //VStack
-            
-            
-            
             
             NavigationLink(destination: historyDetailView(historyDetail: historyDetailObserved), isActive: $isShow) {
                 EmptyView()

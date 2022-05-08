@@ -64,34 +64,6 @@ struct Checkout: View {
         PaymentMedthod()
             .padding()
         
-        //        VStack (alignment: .leading, spacing: 8, content:{
-        //            Text("Order")
-        //                .font(.system(size: 20, weight: .semibold, design: .serif ))
-        //                .fontWeight(.bold)
-        //                .foregroundColor(.black)
-        //
-        //            Divider()
-        //
-        //            HStack(spacing: 20) {
-        //                Image(cartManager.products[0].image)
-        //                    .resizable()
-        //                    .aspectRatio(contentMode: .fit)
-        //                    .frame(width: 50)
-        //                    .cornerRadius(10)
-        //
-        //                VStack(alignment: .leading, spacing: 10) {
-        //                    Text(cartManager.products[0].name)
-        //                        .bold()
-        //
-        //                    Text(String(format: "%.2f", cartManager.products[0].price))
-        //                }
-        //
-        //                Spacer()
-        //            }
-        //
-        //        })
-        //        .padding()
-        
         ScrollView {
             if cartManager.products.count > 0 {
                 
@@ -109,22 +81,11 @@ struct Checkout: View {
                 Text("Your cart is empty")
             }
         }
-                
         PaymentButton(action: {
             createTransaction()
         })
         .padding()
-        //        NavigationLink {
-        //            MyOrder()
-        //        } label: {
-        ////            Checkoutbutton()
-        ////                .padding(.top,250)
-        ////                .zIndex(1)
-        //            PaymentButton(action: {})
-        //                .padding()
-        //        }
     }
-    
 }
 
 struct Checkout_Previews: PreviewProvider {
@@ -137,5 +98,3 @@ struct Checkout_Previews: PreviewProvider {
             .environmentObject(CartManager())
     }
 }
-
-

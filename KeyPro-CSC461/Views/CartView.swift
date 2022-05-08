@@ -16,7 +16,7 @@ struct CartView: View {
                 if cartManager.products.count > 0 {
                     
                     ForEach(0..<cartManager.products.count, id: \.self) { index in ProductRow(product: cartManager.products[index], index: index) }
-                                        
+                    
                 } else {
                     Text("Your cart is empty")
                 }

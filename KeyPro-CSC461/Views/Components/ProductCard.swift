@@ -53,9 +53,6 @@ struct ProductCard: View {
                 .frame(width: 180, height: 250, alignment: .top)
                 .background(.white)
                 .cornerRadius(20)
-//                    .aspectRatio(contentMode: .fill)
-                
-                
             }
             .frame(width: 180, height: 250)
             .shadow(radius: 3)

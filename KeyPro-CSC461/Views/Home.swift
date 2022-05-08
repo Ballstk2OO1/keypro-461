@@ -9,7 +9,6 @@ import SwiftUI
 
 struct Home: View {
     
-
     @State var showSignUp = false
     
     @State var maxCircleHeight: CGFloat = 0
@@ -28,15 +27,14 @@ struct Home: View {
                     }
                 }
                 
-                
                 return AnyView(
-                
+                    
                     ZStack{
                         
                         Circle()
                             .fill(Color(.gray))
                             .offset(x: getRect().width / 2,y: -height / 1.3)
-                            
+                        
                         
                         Circle()
                             .fill(Color(.gray))
@@ -51,13 +49,12 @@ struct Home: View {
             }
             .frame(maxHeight: getRect().width)
             
-
         }
         .onTapGesture {
             UIApplication.shared.endEditing()
         }
         ZStack{
-
+            
             if showSignUp{
                 RegisterPage()
             }
@@ -66,15 +63,10 @@ struct Home: View {
             }
         }
         
-        
-        
-       
-        
         .padding(.top,-maxCircleHeight / 1.6)
         .frame(maxHeight: .infinity, alignment: .top)
-    
         .overlay(
-        
+            
             HStack{
                 Text(showSignUp ? "Already member?" : "New Member")
                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
@@ -108,14 +100,12 @@ struct Home: View {
                     .frame(width: 90, height: 90)
                     .offset(x: 40,y: 20)
             }
-            .offset(y: getSafeArea().bottom)
+                .offset(y: getSafeArea().bottom)
             
             ,alignment: .bottom
-        
+            
         )
     }
-
-    
 }
 
 struct Home_Previews: PreviewProvider {

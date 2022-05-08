@@ -25,7 +25,7 @@ struct historyDetailView: View {
                 .foregroundColor(.black)
                 .frame(alignment: .leading)
                 .padding(.top, 50)
-                
+            
             Text("Order ID: \(historyDetail.id ?? "")")
             Text("Order Date: \(historyDetail.date ?? "")")
             Text("Order Amount: \(productList.count)")

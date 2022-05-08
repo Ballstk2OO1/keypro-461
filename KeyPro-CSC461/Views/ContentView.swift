@@ -25,9 +25,9 @@ struct ContentView: View {
 struct MainView: View {
     @StateObject var cartManager = CartManager()
     var columns = [GridItem(.adaptive(minimum: 160), spacing: 20)]
-    @State var productList = [Product]()    
+    @State var productList = [Product]()
     
-    func getAllProduct() {        
+    func getAllProduct() {
         TransactionViewModel().getAll() { result in
             switch result {
             case .success(let res):
@@ -52,36 +52,36 @@ struct MainView: View {
     }
     
     var body: some View {
-            ScrollView {
-                LazyVGrid(columns: columns, spacing: 20) {
-                    if productList.count > 0 {
-                        ForEach(productList, id: \.id) { product in
-                            NavigationLink {
-                                ProductDetailView(product: product)
-                                    .environmentObject(cartManager)
-                            } label: {
-                                ProductCard(product: product)
-                                    .environmentObject(cartManager)
-                            }
+        ScrollView {
+            LazyVGrid(columns: columns, spacing: 20) {
+                if productList.count > 0 {
+                    ForEach(productList, id: \.id) { product in
+                        NavigationLink {
+                            ProductDetailView(product: product)
+                                .environmentObject(cartManager)
+                        } label: {
+                            ProductCard(product: product)
+                                .environmentObject(cartManager)
                         }
-                    } else {
-                        Text("ไม่พบสินค้า กรุณาลองใหม่อีกครั้ง")
                     }
-                }
-                .padding()
-            }
-            .onAppear {
-                getAllProduct()
-            }
-            .navigationTitle(Text("KeyPro"))
-            .toolbar {
-                NavigationLink {
-                    CartView()
-                        .environmentObject(cartManager)
-                } label: {
-                    CartButton(numberOfProduct: cartManager.products.count)
+                } else {
+                    Text("Please try again")
                 }
             }
+            .padding()
+        }
+        .onAppear {
+            getAllProduct()
+        }
+        .navigationTitle(Text("KeyPro"))
+        .toolbar {
+            NavigationLink {
+                CartView()
+                    .environmentObject(cartManager)
+            } label: {
+                CartButton(numberOfProduct: cartManager.products.count)
+            }
+        }
     }
 }
 

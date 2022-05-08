@@ -17,20 +17,13 @@ struct ProductDetailView: View {
     var body : some View {
         
         VStack(alignment: .leading, spacing: 5, content: {
-            //NAVBAR
-            //            NavigationBar()
-            //                .padding(.horizontal)
-            //                .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
-            //HEADER
-//            Header(name: product.name)
-//                .padding(.horizontal)
-            //DETAIL TOP
+            
             TopDetailView(image: product.image, price: product.price)
                 .padding(.horizontal)
                 .zIndex(1)
-            //DETAIL BOTTOM
+            
             VStack(alignment: .center, spacing: 6, content: {
-                //DESCRIPTION
+                
                 ScrollView(.vertical, showsIndicators: false, content: {
                     Text(product.description ?? "")
                         .padding()
@@ -39,24 +32,20 @@ struct ProductDetailView: View {
                         .multilineTextAlignment(.leading)
                 })
                 
-                //QUANTITY,FAV
                 QuantityFavView(counter: $counter)
                     .padding(.vertical, 10)
-                //ADD TO CART
                 
                 AddToCart(counter: $counter, product: product)
                     .padding(.bottom, 20)
                     .environmentObject(cartManager)
                 
-                
-            })//:VSTACK
+            })
             .padding(.horizontal)
             .background(Color(UIColor.systemTeal).opacity(0.3))
             .clipShape(CustomShape())
             .padding(.top)
             
-            
-        })//VSTACK
+        })
         .edgesIgnoringSafeArea(.bottom)
         .background(Color.white)
         .navigationTitle(Text(product.name))
@@ -69,8 +58,6 @@ struct ProductDetailView: View {
             }
         }
     }
-    
-    
 }
 
 struct ProductDetailView_Previews: PreviewProvider {

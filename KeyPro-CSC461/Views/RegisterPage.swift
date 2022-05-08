@@ -165,5 +165,4 @@ struct RegisterPage: View {
             RegisterPage()
         }
     }
-    
 }
